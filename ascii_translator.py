@@ -40,6 +40,8 @@ def reset_all(*args):
 
 # Crea la finestra principale
 root = tk.Tk()
+root.iconbitmap(r'.\\resources\\ascii.ico')
+root.wm_iconphoto(False, tk.PhotoImage(file='.\\resources\\ascii.png'))
 root.title("ASCII to Char converter")
 root.configure(bg="white")
 root.geometry("300x150")
